@@ -20,8 +20,10 @@ public class MonedaItem : MonoBehaviour
             GetComponent<SpriteRenderer>().enabled = false;
             Destroy(gameObject, 1f);    // Lo destruye después de 0.8s
             
-            // Desaparece el personaje
-            //Destroy(other.gameObject);
+            // Contar monedas
+            SaludPersonaje.instance.monedas++;
+            // Actualizar HUD texto de monedas
+            HUD.instance.ActualizarMonedas();   // 
         }
     }
 }

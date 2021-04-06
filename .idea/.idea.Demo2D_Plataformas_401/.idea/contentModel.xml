@@ -7,11 +7,14 @@
         <e p="Scripts" t="Include">
           <e p="CambiaAnimacion.cs" t="Include" />
           <e p="Enemigo.cs" t="Include" />
+          <e p="HUD.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
+          <e p="MenuPausa.cs" t="Include" />
           <e p="MonedaItem.cs" t="Include" />
           <e p="MoverCamara.cs" t="Include" />
           <e p="MoverPersonaje.cs" t="Include" />
           <e p="PruebaPiso.cs" t="Include" />
+          <e p="SaludPersonaje.cs" t="Include" />
         </e>
       </e>
       <e p="Demo2D_Plataformas_401.sln" t="IncludeFlat" />
