@@ -9,18 +9,27 @@ using UnityEngine.SceneManagement;
  */
 public class Enemigo : MonoBehaviour
 {
+    public AudioSource efectoChocaPersonaje;
+    public AudioSource efectoMuerePersonaje;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
+            // Repriducir el sonido
+            efectoChocaPersonaje.Play();
+
             SaludPersonaje.instance.vidas--; // Descuenta una vida
             // Actualizar el HUD
             HUD.instance.ActualizarVidas();
             
             if (SaludPersonaje.instance.vidas == 0)
             {
-                Destroy(other.gameObject, 0.5f);
-                SceneManager.LoadScene("EscenaMenu");
+                efectoMuerePersonaje.Play();
+                Destroy(other.gameObject, 5f);
+                
+
+                //SceneManager.LoadScene("EscenaMenu");
             }
         }
     }

@@ -8,11 +8,18 @@ using UnityEngine;
  */
 public class MonedaItem : MonoBehaviour
 {
+    // Audio source
+    public AudioSource efectoMoneda;
+
+
     // Se ejecuta cuando hay una colisión
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            // reproducir el efecto
+            efectoMoneda.Play();        // Se reproduce
+
             // Lo debe recolectar
             // PRENDE la explosión
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
