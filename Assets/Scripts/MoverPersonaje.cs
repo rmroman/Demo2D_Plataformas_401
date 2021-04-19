@@ -12,6 +12,9 @@ public class MoverPersonaje : MonoBehaviour
     // Necesito el Rigidbody para cambiar la velocidad
     private Rigidbody2D rigidbody;
 
+    // Prefab para clonar proyectiles
+    public GameObject proyectil;        // Arrastar el prefab a esta variable
+
 
     // METODOS
 
@@ -32,12 +35,19 @@ public class MoverPersonaje : MonoBehaviour
         rigidbody.velocity = new Vector2( movHorizontal * velocidadX, rigidbody.velocity.y);
 
         // Mover vertical (SALTO)
-        float movVertical = Input.GetAxis("Vertical");      // [0, 1]
-        if (movVertical > 0 && PruebaPiso.estaEnPiso)
+        //float movVertical = Input.GetAxis("Vertical");      // [0, 1]
+        //if (movVertical > 0 && PruebaPiso.estaEnPiso)
+        if ( Input.GetButtonDown("Jump") && PruebaPiso.estaEnPiso )
         {
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, velocidadY);
         }
-
+        // DISPARA!!!!!
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject nuevoProyectil = Instantiate(proyectil);
+            nuevoProyectil.transform.position = gameObject.transform.position;
+            nuevoProyectil.SetActive(true);
+        }
     }
 }
 

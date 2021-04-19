@@ -18,9 +18,29 @@ public class HUD : MonoBehaviour
 
     public static HUD instance;
 
+    public Image imagenFondo;       // Color que hará FadeIn
+
+    
+
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        // FadeIn
+        imagenFondo.canvasRenderer.SetAlpha(1f);
+        FadeIn();
+
+        int numeroMonedas = PlayerPrefs.GetInt("numeroMonedas", 3);
+        textoMonedas.text = numeroMonedas.ToString();
+        SaludPersonaje.instance.monedas = numeroMonedas;
+    }
+
+    private void FadeIn()
+    {
+        imagenFondo.CrossFadeAlpha(0, 0.7f, false);
     }
 
     // Deshabilita los corazones dependiendo de las vidas

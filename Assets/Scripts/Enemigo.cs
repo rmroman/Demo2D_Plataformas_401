@@ -28,6 +28,9 @@ public class Enemigo : MonoBehaviour
                 efectoMuerePersonaje.Play();
                 Destroy(other.gameObject, 5f);
                 
+                // SALVAR el estado del juego
+                PlayerPrefs.SetInt("numeroMonedas", SaludPersonaje.instance.monedas);
+                PlayerPrefs.Save(); // En este momento se escriben los datos
 
                 //SceneManager.LoadScene("EscenaMenu");
             }

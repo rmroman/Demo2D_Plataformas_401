@@ -9,10 +9,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PruebaPiso.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoverCamara.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemigo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoverCamara.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUD.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -21,11 +21,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MoverPersonaje.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoverCamara.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemigo.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaludPersonaje.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonedaItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/HUD.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MenuPausa.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HUD.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemigo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OtrosComponentes.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pB3QuFUzSU50MTyI4r54ezTRw5" />
@@ -52,6 +53,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -61,6 +63,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
