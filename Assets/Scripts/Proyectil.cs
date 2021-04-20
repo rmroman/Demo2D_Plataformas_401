@@ -22,7 +22,7 @@ public class Proyectil : MonoBehaviour
     
     void Update()
     {
-        gameObject.transform.Rotate(Vector3.forward, 5);
+        gameObject.transform.Rotate(Vector3.forward, 5);  // girando
         // Revisar cuándo debe desaparecer
         if (!rendererProyectil.isVisible)
         {
